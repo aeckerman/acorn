@@ -8,7 +8,7 @@ $('#region').keyup(function(event){
 // Go action
 var get = function() {
 	var data = document.getElementById('acr').value;
-	$.get('http://www.nactem.ac.uk/software/acromine/dictionary.py?sf=' + data, function (json) {
+	$.getJSON('http://www.nactem.ac.uk/software/acromine/dictionary.py?sf=' + data, function (json) {
 	    var sf = json.lfs[0].lf;
 	    var og = json.lfs[0].since;
         alert('Stands for: ' + sf);
