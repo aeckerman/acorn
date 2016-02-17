@@ -10,7 +10,7 @@
 if(typeof korz == 'undefined'){
 
     var korz = {
-       router:"[http://blubrackets.github.io/acorn]"
+       router:"blubrackets.github.io/acorn/asserts/js/main.js"
     };
     korz.config = function(options){
         for(var opt in options){
